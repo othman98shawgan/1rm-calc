@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.app.a1RMcalc.ui.HomeFragment"
+        android:label="1 Rep Max"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_wendler"
+        android:name="com.app.a1RMcalc.ui.calcWendlerFragment"
+        android:label="5/3/1 Wendler Percentages"
+        tools:layout="@layout/fragment_calc_wendler" />
+
+    <fragment
+        android:id="@+id/nav_perc"
+        android:name="com.app.a1RMcalc.ui.percentageFragment"
+        android:label="Calculate Percentage"
+        tools:layout="@layout/fragment_percentage" />
+
+    <fragment
+    android:id="@+id/nav_plates"
+    android:name="com.app.a1RMcalc.ui.platesFragment"
+    android:label="Calculate Plates"
+    tools:layout="@layout/fragment_plates" />
+</navigation>
